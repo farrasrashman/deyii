@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffc0cb; /* Pink background */
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    background-color: #ffffff; /* White background / color: #000000; / Black text color */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-face-front {
+    background-color: #ffd7ff; /* Softer pink background, more like white */
+    color: #000000; /* Black text color */
+}
+
+.card-face-back {
+    background-color: #ffd7ff; /* Softer pink background, more like white */
+    color: #000000; /* Black text color */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Added to center the wishes text horizontally */
+}
+
+#wish {
+    align-self: center;
+    font-size: 18px; /* Added to make the text larger */
+}
+
+#love-message {
+    align-self: center;
+    margin-top: auto;
+    border: 2px solid #000000;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+h1, h2, h3 {
+    display: block;
+    font-size: 26px; /* Added to make the text larger */
+}
+
+p {
+    font-size: 18px; /* Added to make the text larger */
+}
+
+#love-message {
+    border: 2px solid #000000;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
